@@ -3,7 +3,6 @@
 .pnp.js
 
 /coverage
-
 /build
 
 .DS_Store
@@ -18,3 +17,5 @@ yarn-error.log*
 
 src/styles.css
 src/styles.css.map
+src/styles-dist.css
+src/styles-dist.css.map
