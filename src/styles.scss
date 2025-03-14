@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: PoppinsExtraBold;
+    src: url(../public/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
     font-family: PoppinsSemiBold;
     src: url(../public/Poppins-SemiBold.ttf);
 }
@@ -13,9 +18,25 @@
     src: url(../public/Roboto-Regular.ttf);
 }
 
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 * {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F7F7FC;
+    padding: 0;
+    margin: 0;
+    color: #4e4e4e
 }
 
 .App {
@@ -26,5 +47,232 @@
         border: 4px solid #E8E8E8;
         border-radius: 19px;
         box-shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
+
+        header {
+
+            @include flex-space();
+            align-items: start;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #E8E8E8;
+
+            .content {
+                .content-image {
+
+                    @include flex-space();
+
+                    img {
+                        height: 400px;
+                        width: 400px;
+                        background-color: #E8E8E8;
+                        border-radius: 30px;
+                        margin-right: 64px;
+                    }
+
+                    .header-data {
+
+                        .name {
+
+                            @include flex-center();
+                            justify-content: start;
+                            font-size: 100px;
+                            color: #3b3b3b;
+
+                            b {
+                                font-family: 'PoppinsExtraBold';
+                                margin-right: 10px;
+                            }
+
+                        }
+
+                        .speciallity {
+                            font-size: 40px;
+                            color: #4e4e4e;
+                        }
+
+                        .links {
+                            @include flex-center();
+                            flex-wrap: wrap;
+                            justify-content: start;
+                            margin-top: 30px;
+
+
+                            .link {
+                                @include flex-center();
+                                background-color: white;
+                                padding: 10px;
+                                border-radius: 16px;
+                                max-width: 400px;
+                                margin-right: 50px;
+                                margin-top: 16px;
+
+                                img {
+                                    height: 46px;
+                                    width: 46px;
+                                    border-radius: 4px;
+                                    background-color: white;
+                                    margin: 0;
+                                }
+
+                                p {
+                                    background-color: white;
+                                    margin-left: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .logo {
+                img {
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+        //header
+
+        .paragraph-title {
+            font-family: 'PoppinsSemiBold';
+            font-size: 32px;
+            margin-bottom: 20px;
+            display: inline-block;
+            color: #3b3b3b;
+            margin-top: 30px;
+        }
+
+        .body {
+            @include flex-center();
+            align-items: flex-start;
+            margin-top: 20px;
+
+
+            .body-left {
+                flex-basis: 30%;
+                padding-right: 30px;
+                border-right: 3px solid #E8E8E8;
+
+                .left-section {
+                    padding-bottom: 54px;
+                    border-bottom: 3px solid #E8E8E8;
+                }
+
+                .profile {
+
+                    .profile-content {
+                        margin-bottom: 40px;
+                        display: inline-block;
+                    }
+
+                    .contacts {
+                        .contacts-list-item {
+
+                            @include flex-space();
+                            justify-content: start;
+                            background-color: #fff;
+                            padding: 10px 20px;
+                            margin-bottom: 10px;
+                            border-radius: 28px;
+
+                            img {
+                                padding: 10px;
+                                height: 22px;
+                                border-radius: 12px;
+                                margin-right: 12px;
+                            }
+
+                            div {
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .education {
+                    .education-list {
+                        .education-list-item:not(:first-child) {
+                            margin-top: 20px;
+                        }
+
+                        .education-list-item {
+
+                            .education-date {
+                                background-color: #fff;
+                                width: fit-content;
+                                padding: 5px 10px;
+                                border-radius: 10px;
+                                font-weight: bold;
+                                margin-bottom: 8px;
+                                font-size: 20px;
+                            }
+
+                            .education-name {
+                                font-weight: bold;
+                                font-size: 20px;
+                                margin-bottom: 4px;
+                            }
+
+                            .education-location {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+
+                .languages {
+                    .languages-list {
+                        @include flex-space();
+                        justify-content: start;
+                        flex-wrap: wrap;
+
+                        .language {
+                            background-color: #fff;
+                            padding: 10px;
+                            font-size: 18px;
+                            border-radius: 16px;
+                            margin-right: 24px
+                        }
+                    }
+                }
+
+                .hobbies {
+                    .hobbies-list {
+
+                        @include flex-space();
+                        justify-content: start;
+                        flex-wrap: wrap;
+
+                        .hobby {
+
+                            @include flex-space();
+                            justify-content: start;
+                            background-color: white;
+                            padding: 12px;
+                            width: fit-content;
+                            margin: 12px;
+                            border-radius: 12px;
+
+                            * {
+                                background-color: #fff;
+                            }
+
+                            img {
+                                height: 32px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .body-right {
+                flex-basis: 70%;
+            }
+        }
+
     }
 }
