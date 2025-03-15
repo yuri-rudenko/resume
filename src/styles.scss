@@ -44,7 +44,7 @@
 
     main {
         padding: 64px;
-        border: 4px solid #E8E8E8;
+        border: 3px solid #E8E8E8;
         border-radius: 19px;
         box-shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
 
@@ -271,6 +271,141 @@
 
             .body-right {
                 flex-basis: 70%;
+                padding-left: 54px;
+
+                .my-projects {
+
+                    table {
+
+                        tr {
+
+                            .project-table-left {
+
+                                @include flex-space();
+                                justify-content: start;
+                                background-color: #fff;
+                                padding: 5px 50px;
+                                border-radius: 20px;
+                                margin-right: 24px;
+
+                                img {
+                                    height: 36px;
+                                    background-color: #fff;
+                                    margin-right: 10px;
+                                }
+
+                                p {
+                                    font-family: 'PoppinsSemiBold';
+                                    background-color: #fff;
+
+                                }
+                            }
+
+                            .project-table-right {
+
+                                border-left: 3px solid #E8E8E8;
+                                padding-left: 24px;
+
+                                .project-table-right-top {
+                                    @include flex-space();
+                                    margin-bottom: 24px;
+
+                                    .project-name {
+                                        font-size: 30px;
+                                        font-family: 'PoppinsSemiBold';
+                                        color: #3b3b3b;
+                                    }
+
+                                    .project-date {
+                                        background-color: #fff;
+                                        padding: 5px 30px;
+                                        font-family: 'PoppinsSemiBold';
+                                        font-size: 20px;
+                                        border-radius: 10px;
+                                        border: 1px solid #E8E8E8;
+                                    }
+
+                                    .project-status {
+                                        font-size: 24px;
+                                        font-family: 'PoppinsSemiBold';
+                                        padding: 5px 36px;
+                                        border-radius: 20px;
+                                        background-color: #fff;
+                                    }
+
+                                    .project-link {
+                                        padding: 10px 40px;
+                                        border-radius: 20px;
+                                        background-color: #fff;
+                                    }
+                                }
+
+                                .project-description {
+                                    margin-bottom: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .skills {
+
+                    .skills-list {
+
+                        @include flex-space();
+                        flex-wrap: wrap;
+
+                        .skill {
+
+                            @include flex-space();
+                            background-color: #fff;
+                            padding: 12px 30px;
+                            border-radius: 16px;
+                            margin: 10px;
+
+                            * {
+                                background-color: #fff;
+                            }
+
+                            img {
+                                height: 30px;
+                                margin-right: 20px;
+                            }
+
+                            .html {
+                                margin-right: 0px;
+                            }
+
+                            p {
+                                font-family: 'PoppinsSemiBold';
+                                font-size: 18px;
+                            }
+                        }
+
+                    }
+                }
+
+                .certificates {
+                    .certificates-list {
+                        @include flex-space();
+                        justify-content: start;
+                    }
+
+                    .certificate {
+                        @include flex-space();
+                        justify-content: start;
+
+                        img {
+                            height: 100px;
+                            margin-right: 10px;
+                            background-color: #fff;
+                        }
+
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
             }
         }
 
