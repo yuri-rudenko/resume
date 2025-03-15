@@ -75,7 +75,7 @@ a {
 
 .App {
 
-    padding: 64px;
+    padding: 10px;
 
     main {
         padding: 64px;
@@ -447,6 +447,7 @@ a {
                     .certificate {
                         @include flex-space();
                         justify-content: start;
+                        margin-top: 8px;
 
                         img {
                             height: 100px;
@@ -466,6 +467,11 @@ a {
 }
 
 @media(max-width:1490px) {
+
+    main {
+        padding: 32px !important;
+    }
+
     .profile-picture {
 
         height: 300px !important;
@@ -506,6 +512,99 @@ a {
                 margin-left: 10px !important;
             }
         }
+    }
+
+    .project-name {
+        font-size: 18px !important;
+    }
+
+    .project-status {
+        font-size: 16px !important;
+        padding: 4px 10px !important;
+    }
+
+    .paragraph-title {
+        font-size: 20px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .profile-content {
+        margin-bottom: 10px !important;
+    }
+
+    .left-section {
+        padding-bottom: 16px !important;
+    }
+
+    .education-list-item * {
+        font-size: 16px !important;
+    }
+
+    .education-list-item:not(:first-child) {
+        margin-top: 16px !important;
+    }
+
+    .education-location {
+        font-size: 14px !important;
+    }
+
+    .contacts-list-item {
+        padding: 5px 10px !important;
+    }
+
+    .education-date {
+        font-size: 14px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .contacts-list-item img {
+        padding: 5px !important;
+        height: 18px !important;
+    }
+
+    .language {
+        font-size: 16px !important;
+        margin-right: 10px !important;
+    }
+
+    .hobby {
+        margin: 8px !important;
+        padding: 10px !important;
+    }
+
+    .hobby-image {
+        height: 24px !important;
+    }
+
+    .project-table-right-top {
+        margin-bottom: 12px !important;
+    }
+
+    .project-description {
+        margin-bottom: 12px !important;
+    }
+
+    .skill {
+        margin: 5px !important;
+        padding: 8px 16px !important;
+    }
+
+    .skill img {
+        height: 20px !important;
+        margin-right: 8px !important;
+    }
+
+    .skill p {
+        font-size: 14px !important;
+    }
+
+    .certificate img {
+        height: 60px !important;
+    }
+
+    .certificate p {
+        font-size: 16px !important;
     }
 
     * {
