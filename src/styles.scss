@@ -30,13 +30,48 @@
     justify-content: space-between;
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.6);
+    }
+
+    to {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
 
 * {
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F7F7FC;
     padding: 0;
     margin: 0;
-    color: #4e4e4e
+    color: #4e4e4e;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .App {
@@ -60,12 +95,22 @@
 
                     @include flex-space();
 
-                    img {
+                    .profile-picture {
                         height: 400px;
                         width: 400px;
                         background-color: #E8E8E8;
                         border-radius: 30px;
                         margin-right: 64px;
+                        cursor: pointer;
+
+                        &:hover {
+                            animation: spin 2s linear;
+                            animation-iteration-count: infinite;
+                        }
+
+                        &:not(:hover) {
+                            animation: none;
+                        }
                     }
 
                     .header-data {
@@ -95,15 +140,18 @@
                             justify-content: start;
                             margin-top: 30px;
 
-
-                            .link {
-                                @include flex-center();
-                                background-color: white;
+                            a {
                                 padding: 10px;
                                 border-radius: 16px;
                                 max-width: 400px;
                                 margin-right: 50px;
                                 margin-top: 16px;
+                                background-color: white;
+                            }
+
+                            .link {
+                                @include flex-center();
+                                background-color: white;
 
                                 img {
                                     height: 46px;
@@ -116,6 +164,7 @@
                                 p {
                                     background-color: white;
                                     margin-left: 16px;
+
                                 }
                             }
                         }

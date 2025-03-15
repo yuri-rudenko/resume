@@ -20,7 +20,9 @@ const MyProjects = () => {
                         </div>
                         <div className="project-table-right-top">
                             <div className="project-status">LIVE</div>
-                            <div className="project-link">github.com/yuri-rudenko/mern-messaging-app</div>
+                            <a href="http://www.github.com/yuri-rudenko/mern-messaging-app">
+                                <div className="project-link">github.com/yuri-rudenko/mern-messaging-app</div>
+                            </a>
                         </div>
                     </td>
                 </tr>
@@ -39,7 +41,9 @@ const MyProjects = () => {
                         </div>
                         <div className="project-table-right-top">
                             <div className="project-status">LIVE</div>
-                            <div className="project-link">github.com/yuri-rudenko/saleTracker</div>
+                            <a href="http://www.github.com/yuri-rudenko/saleTracker">
+                                <div className="project-link">github.com/yuri-rudenko/saleTracker</div>
+                            </a>
                         </div>
                     </td>
                 </tr>
@@ -58,7 +62,9 @@ const MyProjects = () => {
                         </div>
                         <div className="project-table-right-top">
                             <div className="project-status">FINISHED</div>
-                            <div className="project-link">github.com/yuri-rudenko/mtg-market-react</div>
+                            <a href="http://www.github.com/yuri-rudenko/mtg-market-react">
+                                <div className="project-link">github.com/yuri-rudenko/mtg-market-react</div>
+                            </a>
                         </div>
                     </td>
                 </tr>
@@ -77,7 +83,9 @@ const MyProjects = () => {
                         </div>
                         <div className="project-table-right-top">
                             <div className="project-status">FINISHED</div>
-                            <div className="project-link">github.com/yuri-rudenko/todo-list</div>
+                            <a href="http://www.github.com/yuri-rudenko/todo-list">
+                                <div className="project-link">github.com/yuri-rudenko/todo-list</div>
+                            </a>
                         </div>
                     </td>
                 </tr>

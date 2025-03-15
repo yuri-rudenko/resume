@@ -1,0 +1,524 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../public/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsExtraBold;
+  src: url(../public/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../public/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../public/Roboto-Regular.ttf);
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.6);
+            transform: rotate(180deg) scale(0.6);
+  }
+  to {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+* {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F7F7FC;
+  padding: 0;
+  margin: 0;
+  color: #4e4e4e;
+  -webkit-animation: fadeInUp 1s ease-out forwards;
+          animation: fadeInUp 1s ease-out forwards;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.App {
+  padding: 64px;
+}
+.App main {
+  padding: 64px;
+  border: 3px solid #E8E8E8;
+  border-radius: 19px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
+}
+.App main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #E8E8E8;
+}
+.App main header .content .content-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.App main header .content .content-image .profile-picture {
+  height: 400px;
+  width: 400px;
+  background-color: #E8E8E8;
+  border-radius: 30px;
+  margin-right: 64px;
+  cursor: pointer;
+}
+.App main header .content .content-image .profile-picture:hover {
+  -webkit-animation: spin 2s linear;
+          animation: spin 2s linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.App main header .content .content-image .profile-picture:not(:hover) {
+  -webkit-animation: none;
+          animation: none;
+}
+.App main header .content .content-image .header-data .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 100px;
+  color: #3b3b3b;
+}
+.App main header .content .content-image .header-data .name b {
+  font-family: "PoppinsExtraBold";
+  margin-right: 10px;
+}
+.App main header .content .content-image .header-data .speciallity {
+  font-size: 40px;
+  color: #4e4e4e;
+}
+.App main header .content .content-image .header-data .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 30px;
+}
+.App main header .content .content-image .header-data .links a {
+  padding: 10px;
+  border-radius: 16px;
+  max-width: 400px;
+  margin-right: 50px;
+  margin-top: 16px;
+  background-color: white;
+}
+.App main header .content .content-image .header-data .links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+.App main header .content .content-image .header-data .links .link img {
+  height: 46px;
+  width: 46px;
+  border-radius: 4px;
+  background-color: white;
+  margin: 0;
+}
+.App main header .content .content-image .header-data .links .link p {
+  background-color: white;
+  margin-left: 16px;
+}
+.App main header .logo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 10px;
+}
+.App main .paragraph-title {
+  font-family: "PoppinsSemiBold";
+  font-size: 32px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #3b3b3b;
+  margin-top: 30px;
+}
+.App main .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+}
+.App main .body .body-left {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding-right: 30px;
+  border-right: 3px solid #E8E8E8;
+}
+.App main .body .body-left .left-section {
+  padding-bottom: 54px;
+  border-bottom: 3px solid #E8E8E8;
+}
+.App main .body .body-left .profile .profile-content {
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.App main .body .body-left .profile .contacts .contacts-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 28px;
+}
+.App main .body .body-left .profile .contacts .contacts-list-item img {
+  padding: 10px;
+  height: 22px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+.App main .body .body-left .profile .contacts .contacts-list-item div {
+  background-color: #fff;
+}
+.App main .body .body-left .education .education-list .education-list-item:not(:first-child) {
+  margin-top: 20px;
+}
+.App main .body .body-left .education .education-list .education-list-item .education-date {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.App main .body .body-left .education .education-list .education-list-item .education-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.App main .body .body-left .education .education-list .education-list-item .education-location {
+  font-size: 18px;
+}
+.App main .body .body-left .languages .languages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.App main .body .body-left .languages .languages-list .language {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 16px;
+  margin-right: 24px;
+}
+.App main .body .body-left .hobbies .hobbies-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.App main .body .body-left .hobbies .hobbies-list .hobby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: white;
+  padding: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 12px;
+  border-radius: 12px;
+}
+.App main .body .body-left .hobbies .hobbies-list .hobby * {
+  background-color: #fff;
+}
+.App main .body .body-left .hobbies .hobbies-list .hobby img {
+  height: 32px;
+  margin-right: 10px;
+}
+.App main .body .body-right {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  padding-left: 54px;
+}
+.App main .body .body-right .my-projects table tr .project-table-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-color: #fff;
+  padding: 5px 50px;
+  border-radius: 20px;
+  margin-right: 24px;
+}
+.App main .body .body-right .my-projects table tr .project-table-left img {
+  height: 36px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.App main .body .body-right .my-projects table tr .project-table-left p {
+  font-family: "PoppinsSemiBold";
+  background-color: #fff;
+}
+.App main .body .body-right .my-projects table tr .project-table-right {
+  border-left: 3px solid #E8E8E8;
+  padding-left: 24px;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-table-right-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-table-right-top .project-name {
+  font-size: 30px;
+  font-family: "PoppinsSemiBold";
+  color: #3b3b3b;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-table-right-top .project-date {
+  background-color: #fff;
+  padding: 5px 30px;
+  font-family: "PoppinsSemiBold";
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #E8E8E8;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-table-right-top .project-status {
+  font-size: 24px;
+  font-family: "PoppinsSemiBold";
+  padding: 5px 36px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-table-right-top .project-link {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.App main .body .body-right .my-projects table tr .project-table-right .project-description {
+  margin-bottom: 24px;
+}
+.App main .body .body-right .skills .skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.App main .body .body-right .skills .skills-list .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 12px 30px;
+  border-radius: 16px;
+  margin: 10px;
+}
+.App main .body .body-right .skills .skills-list .skill * {
+  background-color: #fff;
+}
+.App main .body .body-right .skills .skills-list .skill img {
+  height: 30px;
+  margin-right: 20px;
+}
+.App main .body .body-right .skills .skills-list .skill .html {
+  margin-right: 0px;
+}
+.App main .body .body-right .skills .skills-list .skill p {
+  font-family: "PoppinsSemiBold";
+  font-size: 18px;
+}
+.App main .body .body-right .certificates .certificates-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.App main .body .body-right .certificates .certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.App main .body .body-right .certificates .certificate img {
+  height: 100px;
+  margin-right: 10px;
+  background-color: #fff;
+}
+.App main .body .body-right .certificates .certificate p {
+  font-size: 20px;
+}
