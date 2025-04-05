@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/resume/static/css/main.1c37ed44.css",
-    "main.js": "/resume/static/js/main.366ab0be.js",
+    "main.js": "/resume/static/js/main.6568d087.js",
     "static/media/profilepicture.png": "/resume/static/media/profilepicture.d536b5de4f99bc54d109.png",
     "static/media/Instagram_logo_2022.svg.webp": "/resume/static/media/Instagram_logo_2022.svg.91fca4b09cd5ea82d92e.webp",
+    "static/media/jest.png": "/resume/static/media/jest.be934370814d2071a113.png",
     "static/media/Poppins-Regular.ttf": "/resume/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-SemiBold.ttf": "/resume/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
     "static/media/Poppins-ExtraBold.ttf": "/resume/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
@@ -17,6 +18,7 @@
     "static/media/tennis.png": "/resume/static/media/tennis.1012db06a1c998951937.png",
     "static/media/Telegram_2019_Logo.svg.webp": "/resume/static/media/Telegram_2019_Logo.svg.a187a85af31aef5353bd.webp",
     "static/media/rsuite.png": "/resume/static/media/rsuite.8488360bb9f7c6380e30.png",
+    "static/media/ts.png": "/resume/static/media/ts.52ea0bc40ba11d507e7d.png",
     "static/media/headphones.png": "/resume/static/media/headphones.7e7578495c1dd2521247.png",
     "static/media/electric-guitar.png": "/resume/static/media/electric-guitar.381d0e3058f470ddd2c7.png",
     "static/media/board-game.png": "/resume/static/media/board-game.469a98074d015d5c2897.png",
@@ -33,10 +35,10 @@
     "static/media/html.webp": "/resume/static/media/html.de3b4c4187db7e7992eb.webp",
     "index.html": "/resume/index.html",
     "main.1c37ed44.css.map": "/resume/static/css/main.1c37ed44.css.map",
-    "main.366ab0be.js.map": "/resume/static/js/main.366ab0be.js.map"
+    "main.6568d087.js.map": "/resume/static/js/main.6568d087.js.map"
   },
   "entrypoints": [
     "static/css/main.1c37ed44.css",
-    "static/js/main.366ab0be.js"
+    "static/js/main.6568d087.js"
   ]
 }
